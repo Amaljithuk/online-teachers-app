@@ -3,37 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teacher-Student App</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .button-container {
+      margin-top: 50px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Teacher-Student App</h1>
-  </header>
-
-  <main>
-    <section id="register-section">
-      <h2>Register as a Teacher</h2>
-      <form id="teacher-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="domain">Domain:</label>
-        <input type="text" id="domain" name="domain" required>
-
-        <label for="experience">Experience (years):</label>
-        <input type="number" id="experience" name="experience" required>
-
-        <button type="submit">Register</button>
-      </form>
-    </section>
-
-    <section id="teachers-list-section">
-      <h2>Available Teachers</h2>
-      <ul id="teachers-list"></ul>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+  <h1>Welcome!</h1>
+  <p>Are you a Student or a Teacher?</p>
+  <div class="button-container">
+    <a href="teacher-registration.html" class="button">I am a Teacher</a>
+    <a href="view-teachers.html" class="button">I am a Student</a>
+  </div>
 </body>
 </html>
